@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css" />
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />   
     </head>
     <body>
         <nav class="navbar navbar-default">
@@ -23,6 +24,14 @@
                     <li><a href="{% url 'registration' %}">Register</a></li>
                     <li><a href="{% url 'login' %}">Login</a></li>
                 {% endif %}
+                    <li>
+                        <a href="{% url 'view_cart' %}">
+                            <i class="fa fa-shipping-cart"></i>Cart
+                            {% if product_count > 0 %}
+                            <label class="badge badge-warning">{{ product_count }}</label>
+                            {% endif %}
+                        </a>
+                    </li>
             </ul>
         </nav>
         
@@ -34,6 +43,14 @@
                 {% endfor %}
             </div>
             {% endif %}
-            {% block content %} {% endblock %}
+            <div class="container">
+        <div class="display">
+            <form action="{% url 'search' %}" method="get">
+                <input type="text" name="q">
+                <button type="search">Search</button>
+            </form>
+        </div>
+        {% block content %} {% endblock %}
+    </div>
     </body>
 </html>
