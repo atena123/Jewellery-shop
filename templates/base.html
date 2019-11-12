@@ -54,17 +54,19 @@
         </div>
         </div>
     </nav>
+    
+    
         
-        <h1>{% block page_heading %} {% endblock %}</h1>
-            {% if messages %}
-            <div>
-                {% for message in messages %}
-                    {{ message }}
-                {% endfor %}
-            </div>
-            {% endif %}
-            
-        {% block content %} {% endblock %}
+    {% if messages %}
+        <div class="messages">
+    {% for message in messages %} {{ message }} {% endfor %}
+        </div>
+    {% endif %}
+        
+    <div class="container block-content">
+        <div class='content-wrapper'>
+            {% block content %} {% endblock %}
+        </div>
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
