@@ -45,17 +45,37 @@
                     </a>
                 </li>
               </ul>
-            <div class="display">
+            <div class="navbar-right">
             <form action="{% url 'search' %}" method="get">
-                <input type="text" name="q">
-                <button type="search">Search</button>
+                <input type="text" name="q"><button type="search">Search</button>
             </form>
         </div>
         </div>
         </div>
     </nav>
     
-    
+    <nav class='navbar navbar-default'>
+        <div class='container-fluid'>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class='nav navbar-nav'>
+                    <li><a href="{% url 'product-filter' category='WhiteDiamondsRings' %}">White Diamond Rings</a></li>
+                    <li><a href="{% url 'product-filter' category='ColouredDiamondsRings' %}">Coloured Diamond Rings</a></li>
+                    <li><a href="{% url 'product-filter' category='Bracelets' %}">Bracelets</a></li>
+                    <li><a href="{% url 'product-filter' category='Earings' %}">Earings</a></li>
+                    <li><a href="{% url 'product-filter' category='Necklaces' %}">Necklaces</a></li>
+                    <li><a href="{% url 'product-filter' category='WeddingBands' %}">Wedding Bands</a></li>
+                    <li><a href="{% url 'products' %}">All Jewelry</a></li>
+            </div>
+    </nav>
         
     {% if messages %}
         <div class="messages">

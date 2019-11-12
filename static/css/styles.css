@@ -1,27 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
 form {
     width: 50%;
 }
 
 body {
-    font-family: Arial;
-    padding-top: 100px;
+    background-color: #DCE3CA; 
 }
 
-footer {
-    margin-top: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 1px solid #ededed;
-    color: #A9A9A9;
+.block-content {
+    min-height: 400px;
 }
 
-.icon-bar {
-    background-color: #fff;
+/*-------------navigation bars--------------*/
+
+
+.navbar-inverse {
+    margin: 0;
+    padding: 0;
 }
 
-.accountform {
-    padding-top: 20px;
+.navbar-brand {
+    font-family: 'Righteous', serif;
+    font-size: 38px;
+    padding-left: 20px;
+    padding-top: 10px;
 }
+
+.navbar-default {
+    display: flex;
+}
+
+.navbar-default .navbar-nav>li>a {
+    padding-left: 30px; 
+    padding-right: 30px;
+}
+
+/*------------products page-----------*/
 
 .badge {
     padding-left: 9px;
@@ -29,11 +44,6 @@ footer {
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
     border-radius: 9px;
-}
-
-.label-warning[href],
-.badge-warning[href] {
-    background-color: #c67605;
 }
 
 .product {
@@ -45,24 +55,20 @@ footer {
     margin: 0 auto;
 }
 
-caption p {
-    word-wrap: break-word;
-}
 
 .row.row-flex {
     display: flex;
-    flex-wrap: wrap;
     margin-top: 30px;
+    
 }
 
 .panel-default {
     border-color: transparent;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 .panel-body {
-    height: 100%;
-    border: 1px solid #ddd;
+    margin: 5px;
 }
 
 .product-description {
