@@ -74,3 +74,70 @@ body {
 .product-description {
     min-height: 40px;
 }
+
+/*-----------------footer------------------*/
+
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 150px;
+    margin: 0;
+    width: 100%;
+}
+
+.row-footer {
+    width: 100%;
+}
+
+.contact {
+    font-size: 20px;
+    color: #fff;
+    margin: 30px;
+    text-align: center;
+}
+
+
+.button-to-top {
+    text-align: right;
+}
+
+.button-to-top a {
+    margin: 10px;
+}
+
+
+.copyright {
+    margin: 10px;
+    text-align: right;
+}
+
+
+.info-item .key p,
+.info-item .value p {
+    font-size: 20px;
+    margin: 0;
+    padding-left: 30px;
+}
+
+.info-item .key {
+    display: inline-block;
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 35px;
+    
+}
+
+.info-item .value {
+    padding-top: 10px;
+    width: 60%;
+}
+
+.social-links {
+    padding-left: 30px;
+}
+
+.heading {
+    padding-top: 35px;
+    padding-left: 50px;
+    font-size: 20px;
+}
