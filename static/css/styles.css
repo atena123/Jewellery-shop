@@ -12,6 +12,31 @@ body {
     min-height: 400px;
 }
 
+h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+h4 {
+    text-align: justify;
+    line-height: 1.8;
+    padding-bottom: 50px;
+}
+
+.address {
+    display: inline-block;
+    width: 135px;
+}
+
+.reg-button {
+    margin-bottom: 30px;
+}
+
 /*-------------navigation bars--------------*/
 
 
@@ -36,6 +61,28 @@ body {
     padding-right: 30px;
 }
 
+/*-----------------home page---------------*/
+
+
+.jumbotron {
+    background-color: white;
+    padding: 20px 0;
+    margin: 40px 0;
+}
+
+.home-heading {
+    text-align: center;
+}
+
+.home-heading-2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: solid 3px white;
+}
+
+
 /*------------products page-----------*/
 
 .badge {
@@ -58,6 +105,7 @@ body {
 
 .row.row-flex {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
     
 }
