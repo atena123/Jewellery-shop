@@ -61,6 +61,27 @@ h4 {
     padding-right: 30px;
 }
 
+.search-form {
+    display: inline;
+}
+
+/*-----------accounts form--------*/
+
+form {
+    width: 50%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.messages {
+    text-align: center;
+}
+
+.alert {
+    text-align: center;
+}
+
+
 /*-----------------home page---------------*/
 
 
