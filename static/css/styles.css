@@ -141,6 +141,19 @@ form {
     min-height: 40px;
 }
 
+/*----------------contact page------------*/
+
+.contact-heading {
+    font-size: 35px;
+    padding: 40px 0;
+}
+
+.center-form form {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    width: 90%;
+}
+
 /*-----------------footer------------------*/
 
 footer {
@@ -206,4 +219,30 @@ footer {
     padding-top: 35px;
     padding-left: 50px;
     font-size: 20px;
+}
+
+/*---------media queries------------------*/
+
+@media screen and (max-width: 767px) {
+    form {
+        width: 80%;
+    }
+    
+    .info-item .key {
+        text-align: center;
+        width: 90%;
+    }
+    
+    .info-item .value {
+        text-align: center;
+        width: 90%;
+    }
+    
+    .heading {
+        text-align: center;
+    }
+    
+    .contact-heading {
+        text-align: center;
+    }
 }
