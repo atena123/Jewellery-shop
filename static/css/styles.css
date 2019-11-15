@@ -12,6 +12,11 @@ body {
     min-height: 400px;
 }
 
+.home-image {
+    width: 100%;
+    
+}
+
 h1 {
     padding-top: 50px;
     padding-bottom: 50px;
