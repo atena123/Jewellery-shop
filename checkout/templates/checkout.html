@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 
@@ -12,7 +12,7 @@
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
 </script>
 
-{% endblock head_js %}
+{% endblock %}
 
 {% block content %}
 <div class="row row-flex">
@@ -33,7 +33,7 @@
 </div>
 <div class="row">
     <p>Total</p>
-    <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
+    <p>$<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
 </div>
 
 <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
