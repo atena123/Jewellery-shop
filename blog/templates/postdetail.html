@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3>{{ post.title }}</h3>
+    </div>
+</div>
+<div class="row">
+    <div class=" col-xs-12 col-sm-8 single-blog-content">
+        <p>{{ post.content }}</p>
+        <p><span class="boldtext">Published on:</span> {{ post.published_date }} </p>
+        <p><span class="boldtext">Views:</span> {{post.views}}</p>
+    </div>
+</div>
+
+<a href="{% url 'get_posts' %}" class="btn info-btn">Back to Blog</a>
+{% endblock %}

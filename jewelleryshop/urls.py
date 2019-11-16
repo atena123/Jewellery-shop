@@ -25,6 +25,7 @@ from search import urls as urls_search
 from contact.views import contact
 from contact import urls as urls_contact
 from checkout import urls as urls_checkout
+from blog import urls as urls_blog
 from django.views import static
 from .settings import MEDIA_ROOT
 
@@ -38,5 +39,6 @@ urlpatterns = [
     url(r'^search/', include(urls_search)),
     url(r'^contact/', contact, name='contact'),
     url(r'^checkout/', include(urls_checkout)),
+    url(r'^blog/', include(urls_blog)),
     url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]
