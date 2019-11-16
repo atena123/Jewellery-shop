@@ -11,7 +11,7 @@ import stripe
 # Create your views here.
 
 stripe.api_key = settings.STRIPE_SECRET
-print(stripe.api_key) 
+
 
 
 
