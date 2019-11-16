@@ -150,13 +150,16 @@ form {
 
 .contact-heading {
     font-size: 35px;
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 50px;
 }
 
 .center-form form {
     padding-top: 60px;
     padding-bottom: 100px;
     width: 90%;
+    margin: auto;
 }
 
 /*-----------------footer------------------*/
@@ -243,6 +246,7 @@ footer {
     padding-bottom: 30px;
 }
 
+
 /*---------media queries------------------*/
 
 @media screen and (max-width: 767px) {
@@ -265,6 +269,11 @@ footer {
     }
     
     .contact-heading {
+        text-align: center;
+        padding-left: 8px;
+    }
+    
+    .post-heading {
         text-align: center;
     }
 }
