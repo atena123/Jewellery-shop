@@ -226,6 +226,23 @@ footer {
     font-size: 20px;
 }
 
+/*---------blog pages --------------------*/
+
+.post-heading {
+    font-size: 35px;
+    padding: 40px 0;
+}
+
+.new-post-form {
+    padding-bottom: 60px;
+}
+
+.post-link {
+    font-size: 20px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
 /*---------media queries------------------*/
 
 @media screen and (max-width: 767px) {

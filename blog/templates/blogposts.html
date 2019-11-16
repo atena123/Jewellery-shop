@@ -15,6 +15,11 @@
             <p><a href="{% url 'post_detail' post.id %}"  class="btn info-btn">Read more</a></p>
         </div>
         </div>
-   
     {% endfor %}
+    
+     <div class="row">
+            <div class="col-xs-12 post-link">
+                <a href="{% url 'new_post' %}">Write Your Review Here... <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+            </div>
+    </div>
 {% endblock %}
