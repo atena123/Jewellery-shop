@@ -70,10 +70,11 @@
                     <li><a href="{% url 'product-filter' category='WhiteDiamondsRings' %}">White Diamond Rings</a></li>
                     <li><a href="{% url 'product-filter' category='ColouredDiamondsRings' %}">Coloured Diamond Rings</a></li>
                     <li><a href="{% url 'product-filter' category='Bracelets' %}">Bracelets</a></li>
-                    <li><a href="{% url 'product-filter' category='Earings' %}">Earings</a></li>
+                    <li><a href="{% url 'product-filter' category='Earings' %}">Earrings</a></li>
                     <li><a href="{% url 'product-filter' category='Necklaces' %}">Necklaces</a></li>
                     <li><a href="{% url 'product-filter' category='WeddingBands' %}">Wedding Bands</a></li>
                     <li><a href="{% url 'products' %}">All Jewelry</a></li>
+                </ul>    
             </div>
     </nav>
         
@@ -152,6 +153,8 @@
             
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% block head_js %}
+    {% endblock head_js %}
     
 </body>
 </html>
