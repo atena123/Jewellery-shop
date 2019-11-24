@@ -13,7 +13,6 @@ colorama==0.3.9
 configobj==5.0.6
 constantly==15.1.0
 cryptography==2.1.4
-distro-info===0.18ubuntu0.18.04.1
 dj-database-url==0.5.0
 Django==1.11.24
 django-forms-bootstrap==3.1.0
