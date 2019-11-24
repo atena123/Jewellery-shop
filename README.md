@@ -2,7 +2,7 @@
 
 ## UX
 
-I created website called 'JEWELLERY' that allows user to purchase jewelry products.
+This is full stack project. I created website called 'JEWELLERY' that allows user to purchase jewelry products.
 The purpose of the website is to successfully sell Jewelry online and drive more sales for the business.
 This website lets users/customers shop from anywhere at any time. Jewellery is a great fit for ecommerce as products 
 are lightweight and easy to ship, come in many variations, and can be customized.
@@ -83,19 +83,42 @@ As a user you can:
 * **Python 3** - used as the backend programming language
 * **Email.js** - to allow user send email and contact the shop
 * **Jinja** - to display back-end data to the front-end
-* **Stripe** - used for online payment processing for the business (suite of payment API)
-* **psycopg2**
-* **Pillow**
-* **gunicorn**
-* **django-storages**
-* **dj-database-url**
-* **boto3**
-* **S3**
+* **Stripe** - used for online payment processing for the business 
+* **Pillow** - library to support opening, manipulating, and saving many different image file formats
+* **gunicorn** - to run Python web application
+* **django-storages** - used in order to use s3
+* **boto3** - allows to connect Django to s3
+* **S3** - allows to store media and static files
 
 ## TESTING
 
 This website had been tested on different devices such as: Desktop, Tablet, Mobile.
 I used Chrome DevTools to make sure it works on: Samsung Galaxy S5, iPhone 5/6/7/8, iPad, PC Desktop;
+
+## DEPLOYMENT
+
+### GITHUB
+
+I deploy my project by going to GitHub, navigate to my github pages site's repository. Under my repository name I clicked Settings.
+Then I used the Select drop-down menu to select master branch and then save it. Now my project is deployed to github pages and accessible to anyone via URL.
+
+Link to my github repository: https://github.com/atena123/Jewellery-shop
+
+### HEROKU
+
+In the terminal, I created a requirements.txt file using this command: pip freeze > requirements.txt. 
+In the terminal, I created a Procfile by running: echo web: python app.py > Procfile command. I push these files to my GitHub repository.
+I created a new app on Heroku dashboard, I named it 'Jewellery-shop' and then I set the region. I linked Github repository to Heroku.
+
+My app can be found at:
+
+To run this project you need to do the following:
+
+* Go to Github repository and click on the 'clone or download' and copy the link https://github.com/atena123/Jewellery-shop
+* Create virtual environment that helps to keep dependencies required by this project separate from other projects by creating virtual environments.
+* Install all required modules by creating requirements.txt file.
+* Create a .env file with the connection to s3, stripe and a secret key.
+* You can run this application by following command: python3 manage.py runserver $IP:$PORT
 
 ## CREDIT
 
@@ -105,8 +128,8 @@ all products images and description are from this website: https://www.jewelrypo
 
 ### aknowlegment
 
-my mentor: Ignatius Ukwuoma - my help throughout the project
-Code Institute - using tutors support
+1. my mentor: Ignatius Ukwuoma - my help throughout the project
+1. Code Institute - using tutors support
 
 
 
