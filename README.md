@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/atena123/Jewellery-shop.svg?branch=master)](https://travis-ci.org/atena123/Jewellery-shop)
+
 # Jewellery shop - website
 
 ## UX
