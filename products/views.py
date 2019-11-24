@@ -8,8 +8,8 @@ def all_products(request):
     return render(request, "products.html", {"products": products})
     
 def product_detail(request, pk):
-    products = get_object_or_404(Product, pk=pk)
-    return render(request, "productdetail.html", {"products": products})
+    product = get_object_or_404(Product, pk=pk)
+    return render(request, "productdetail.html", {"product": product})
     
 def product_filter(request, category):
     products = Product.objects.filter(category=category)

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
+
 form {
     width: 50%;
 }
@@ -9,7 +10,7 @@ body {
 }
 
 .block-content {
-    min-height: 400px;
+    min-height: 500px;
 }
 
 
@@ -37,6 +38,7 @@ h4 {
 .reg-button {
     margin-bottom: 30px;
 }
+
 
 /*-------------navigation bars--------------*/
 
