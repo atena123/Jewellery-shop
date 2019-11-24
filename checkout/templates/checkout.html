@@ -32,12 +32,13 @@
     {% endfor %}
 </div>
 <div class="row">
-    <p>Total</p>
-    <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span><strong>{{ total }}</strong></p>
+    <p class="total-heading">Total</p>
+    <p class="total-price"><span class="glyphicon glyphicon-euro" aria-hidden="true"></span><strong>{{ total }}</strong></p>
 </div>
+<hr class="checkout-divider">
 
 <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
-    <legend>Payment Details</legend>
+    <legend class="payment-heading">Payment Details</legend>
 
     <div id="credit-card-errors" style="display: none;">
         <div id="alert-message block-message error" id="stripe-error-message"></div>
@@ -52,7 +53,7 @@
     </div>
 
     {% csrf_token %}
-    <div class="form-group col-md-12">
+    <div class="form-group col-md-12 payment-button">
         <input class=" btn btn-primary" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
     </div>
 </form>
