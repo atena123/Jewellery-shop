@@ -1,5 +1,5 @@
 Django==1.11.24
-Pillow==4.3.0
+Pillow==5.1.0
 boto3==1.4.7
 botocore==1.7.34
 chardet==2.2.1
