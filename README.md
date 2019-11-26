@@ -87,10 +87,11 @@ As a user you can:
 * **Jinja** - to display back-end data to the front-end
 * **Stripe** - used for online payment processing for the business 
 * **Pillow** - library to support opening, manipulating, and saving many different image file formats
-* **gunicorn** - to run Python web application
+* **gunicorn** - to run Python web application, required to connect to heroku
 * **django-storages** - used in order to use s3
 * **boto3** - allows to connect Django to s3
 * **S3** - allows to store media and static files
+* **Procfile** - it tells heroku what kind of app its getting
 
 ## TESTING
 
