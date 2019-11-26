@@ -113,7 +113,7 @@ In the terminal, I created a requirements.txt file using this command: pip freez
 In the terminal, I created a Procfile by running: echo web: python app.py > Procfile command. I push these files to my GitHub repository.
 I created a new app on Heroku dashboard, I named it 'Jewellery-shop' and then I set the region. I linked Github repository to Heroku.
 
-My app can be found at:
+My app can be found at: https://online-jewellery-shop.herokuapp.com/
 
 To run this project you need to do the following:
 
