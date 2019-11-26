@@ -70,7 +70,6 @@ stevedore==1.31.0
 stripe==2.40.0
 systemd-python==234
 Twisted==17.9.0
-unattended-upgrades==0.1
 urllib3==1.25.6
 virtualenv==16.2.0
 virtualenv-clone==0.5.3
