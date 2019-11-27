@@ -172,6 +172,13 @@ form {
     background-color: #228B22;
 }
 
+.single-image {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
 /*----------------contact page------------*/
 
 .contact-heading {
