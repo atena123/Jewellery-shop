@@ -25,7 +25,7 @@ idna==2.6
 incremental==16.10.1
 isort==4.3.21
 jedi==0.11.1
-Jinja2==2.10
+Jinja2==2.11.3
 jmespath==0.9.4
 jsonpatch==1.16
 jsonpointer==1.10
