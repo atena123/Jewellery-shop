@@ -67,7 +67,7 @@ service-identity==16.0.0
 six==1.12.0
 stevedore==1.31.0
 stripe==2.40.0
-Twisted==17.9.0
+Twisted==22.2.0
 urllib3==1.25.6
 wrapt==1.11.2
 zope.interface==4.3.2
